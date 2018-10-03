@@ -4,10 +4,16 @@ class Stack
   def initialize
     @size = 0
     @things = Array.new
+    @max = Array.new
   end
 
   def push (value)
     @things[@size] = value
+    if @size == 0
+      @max[@size] = value
+    else
+      @max[@size] = value > self.max ? value : self.max
+    end
     @size += 1
     self
   end
@@ -16,5 +22,9 @@ class Stack
     return nil unless @size > 0
     @size -= 1
     @things.delete_at @size
+  end
+
+  def max
+    @max[@size - 1]
   end
 end
