@@ -21,6 +21,7 @@ class Stack
   def pop
     return nil unless @size > 0
     @size -= 1
+    @max.delete_at @size
     @things.delete_at @size
   end
 
