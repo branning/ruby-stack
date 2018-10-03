@@ -24,6 +24,8 @@ class StackTest < Minitest::Test
   end
 
   def test_stack_max
+    s = Stack.new
+    assert_nil s.max
     s = Stack.new.push(3).push(5).push(4)
     assert_equal 5, s.max
     s.pop
