@@ -7,7 +7,11 @@ class StackTest < Minitest::Test
     assert_instance_of(Stack, s)
   end 
 
-  def test_stack_push_pop
+  def test_stack_push
+    assert_equal 1, Stack.new.push(5).size
+  end
+
+  def test_stack_pop
     skip
     assert_equal 5, Stack.new.push(5).pop()
   end
