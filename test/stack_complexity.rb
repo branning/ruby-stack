@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'stack'
+require_relative '../stack'
 
 class StackComplexity < Minitest::Test
   # suite of parameterized push, size, pop, max test

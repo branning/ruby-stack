@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'stack'
+require_relative '../stack'
 
 class StackTest < Minitest::Test
   def test_stack_initializer
