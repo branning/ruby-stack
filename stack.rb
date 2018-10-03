@@ -11,4 +11,8 @@ class Stack
     @size += 1
     self
   end
+
+  def pop
+    return nil unless @size > 0
+  end
 end
