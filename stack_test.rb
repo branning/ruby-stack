@@ -16,7 +16,7 @@ class StackTest < Minitest::Test
   end
 
   def test_stack_pop_empty
-    assert_equal nil, Stack.new.pop
+    assert_nil Stack.new.pop
   end
 
   def test_stack_push_pop
