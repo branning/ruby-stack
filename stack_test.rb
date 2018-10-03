@@ -8,6 +8,10 @@ class StackTest < Minitest::Test
   end 
 
   def test_stack_push
+    assert_instance_of(Stack, Stack.new.push(5))
+  end
+
+  def test_stack_size
     assert_equal 1, Stack.new.push(5).size
   end
 
