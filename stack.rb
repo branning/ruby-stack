@@ -26,6 +26,7 @@ class Stack
   end
 
   def max
+    return nil unless @size > 0
     @max[@size - 1]
   end
 end
