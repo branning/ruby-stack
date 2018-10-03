@@ -19,5 +19,11 @@ There are some `minitest` unit tests in [stack_test.rb](./stack_test.rb)
 
 ```console
 gem install minitest
-ruby stack_test.rb
+make test
 ```
+
+## Is the complexity O(1)?
+
+There was an attempt to test this, with increasing array sizes. Try running
+
+    make complexity
