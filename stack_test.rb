@@ -16,7 +16,6 @@ class StackTest < Minitest::Test
   end
 
   def test_stack_push_pop
-    skip
     assert_equal 5, Stack.new.push(5).pop()
   end
 end
