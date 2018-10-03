@@ -2,6 +2,6 @@ test:
 	ruby test/stack_test.rb
 
 complexity:
-	bash complexity.sh
+	bash test/complexity.sh
 
 .PHONY: test complexity
